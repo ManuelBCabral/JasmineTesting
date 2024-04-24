@@ -20,3 +20,5 @@ class Player {
     this.currentlyPlayingSong.persistFavoriteStatus(true);
   }
 }
+
+module.exports = Player;
