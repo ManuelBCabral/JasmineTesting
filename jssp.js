@@ -93,7 +93,7 @@ obj.f = function()
 }
 
 // main code starts
-document.querySelector("#name").innerHTML =	prompt("Enter your name: ");
+//document.querySelector("#name").innerHTML =	prompt("Enter your name: ");
 
 d = 60;
 l = 50;
