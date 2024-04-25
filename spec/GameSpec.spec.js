@@ -44,8 +44,6 @@ describe("Space Game", function() {
       document.querySelectorAll(".robo > div").forEach(function(robot) {
         expect(parseInt(robot.style.top)).toEqual(9);
       });
-    });
-  
-    
+    }); 
   });
   
