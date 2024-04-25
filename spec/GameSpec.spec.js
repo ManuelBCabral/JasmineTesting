@@ -1,4 +1,4 @@
-<reference path = "/jssp.js"></reference>
+<reference path = "jssp.js"/>
 describe("Space Game", function() {
     beforeEach(function() {
       // Set up the DOM elements required for testing
