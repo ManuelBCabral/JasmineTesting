@@ -67,12 +67,64 @@ describe("Calculator", function() {
     expect(reverseNumberFormat("1,000")).toEqual(1000);
   });
   it("should add two numbers correctly", function() {
+    var history= "5+";
+    var output ="5";
+    history = history + output;
     printHistory("5+");
     printOutput("5");
+    var result = eval(history);
     document.getElementById("+").click();
-    printOutput("10");
+    printOutput(result);
     document.getElementById("=").click();
-    expect(document.getElementById("output-value").innerText).toEqual("15");
+    expect(document.getElementById("output-value").innerText).toEqual("10");
+  });
+  it("should subtract two numbers correctly", function() {
+    var history= "10-";
+    var output ="5";
+    history = history + output;
+    printHistory("10-");
+    printOutput("5");
+    var result = eval(history);
+    document.getElementById("-").click();
+    printOutput(result);
+    document.getElementById("=").click();
+    expect(document.getElementById("output-value").innerText).toEqual("5");
+  });
+  it("should multiply two numbers correctly", function() {
+    var history= "5*";
+    var output ="5";
+    history = history + output;
+    printHistory("5*");
+    printOutput("5");
+    var result = eval(history);
+    document.getElementById("*").click();
+    printOutput(result);
+    document.getElementById("=").click();
+    expect(document.getElementById("output-value").innerText).toEqual("25");
+  });
+  it("should divide two numbers correctly", function() {
+    var history= "10/";
+    var output ="5";
+    history = history + output;
+    printHistory("10/");
+    printOutput("5");
+    var result = eval(history);
+    document.getElementById("/").click();
+    printOutput(result);
+    document.getElementById("=").click();
+    expect(document.getElementById("output-value").innerText).toEqual("2");
+  });
+  it("should divide two numbers correctly", function() {
+    var history= "9%";
+    var output ="2";
+    history = history + output;
+    printHistory("9%");
+    printOutput("2");
+    var result = eval(history);
+    document.getElementById("%").click();
+    printOutput(result);
+    document.getElementById("=").click();
+    expect(document.getElementById("output-value").innerText).toEqual("1");
   });
 
 });
