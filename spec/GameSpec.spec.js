@@ -1,9 +1,5 @@
 describe("Space Game", function() {
-  it("checks true to be true", function() {
-    expect(true).toBe(true);
-  });
-  /*
-    beforeEach(function() {
+    /*beforeEach(function() {
       // Set up the DOM elements required for testing
       document.body.innerHTML = `
         <div class="info">
@@ -27,6 +23,9 @@ describe("Space Game", function() {
           </div>
         </div>
       `;
+    });*/
+    it("checks true to be true", function() {
+      expect(true).toBe(true);
     });
   
     it("should reset the game state", function() {
@@ -47,6 +46,6 @@ describe("Space Game", function() {
       document.querySelectorAll(".robo > div").forEach(function(robot) {
         expect(parseInt(robot.style.top)).toEqual(9);
       });
-    }); */
+    }); 
   });
   
