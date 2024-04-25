@@ -1,3 +1,4 @@
+<reference path = "/jssp.js"></reference>
 describe("Space Game", function() {
     beforeEach(function() {
       // Set up the DOM elements required for testing
@@ -45,6 +46,6 @@ describe("Space Game", function() {
       });
     });
   
-    // Add more test cases as needed
+    
   });
   
